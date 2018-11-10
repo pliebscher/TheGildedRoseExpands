@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using TheGildedRose.WebAPI.Handlers;
 
 namespace TheGildedRose.WebAPI
 {
@@ -10,6 +11,7 @@ namespace TheGildedRose.WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            //config.MessageHandlers.Add(new APIKeyAuthorizationHandler());
 
             // Web API routes
             config.MapHttpAttributeRoutes();
