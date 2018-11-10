@@ -5,10 +5,19 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
+using TheGildedRose.Data.Repositories;
+
 namespace TheGildedRose.WebAPI.Controllers
 {
     public class OrderController : ApiController
     {
+        private IOrderRepository _orderRepository;
+
+        public OrderController(OrderRepository orderRepository)
+        {
+            _orderRepository = orderRepository;
+        }
+
         // GET: api/Order
         public IEnumerable<string> Get()
         {

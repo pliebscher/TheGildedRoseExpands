@@ -14,6 +14,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGildedRose.Data.Repositories", "TheGildedRose.Data.Repositories\TheGildedRose.Data.Repositories.csproj", "{5BE1C273-ED75-4A5E-BF78-57B404D7F696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGildedRose.WebAPI.Models", "TheGildedRose.WebAPI.Models\TheGildedRose.WebAPI.Models.csproj", "{DD242D8E-4183-410D-BE46-C13F75B23BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGildedRose.Data.Models", "TheGildedRose.Data.Models\TheGildedRose.Data.Models.csproj", "{85205301-A758-4ABC-9275-45784329CC7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +38,18 @@ Global
 		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD242D8E-4183-410D-BE46-C13F75B23BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD242D8E-4183-410D-BE46-C13F75B23BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD242D8E-4183-410D-BE46-C13F75B23BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD242D8E-4183-410D-BE46-C13F75B23BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85205301-A758-4ABC-9275-45784329CC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85205301-A758-4ABC-9275-45784329CC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85205301-A758-4ABC-9275-45784329CC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85205301-A758-4ABC-9275-45784329CC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
