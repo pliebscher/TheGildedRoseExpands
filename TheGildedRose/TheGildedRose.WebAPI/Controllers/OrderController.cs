@@ -25,16 +25,21 @@ namespace TheGildedRose.WebAPI.Controllers
         // POST: api/Order
         public HttpResponseMessage Post([FromBody]OrderRequest order)
         {
-            if (string.IsNullOrWhiteSpace(order.ItemId))
+            // Do some validation...
+            if (order == null || string.IsNullOrWhiteSpace(order.ItemId))
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
 
+            // Fetch the item from Inventory...
             Item item = _inventoryRepository.GetItem(Guid.Parse(order.ItemId));
 
+            // Some more validation...
             if (item == null)
                 return Request.CreateResponse(HttpStatusCode.NotFound);
 
-            Order newOrder = _orderRepository.Create(item, order.Quantity);
+            // Create the Order...
+            Order newOrder = _orderRepository.Create(Guid.Parse(order.MerchantId), item, order.Quantity);
 
+            // Send the response...
             return Request.CreateResponse<OrderResponse>(HttpStatusCode.OK, new OrderResponse() { OrderId = newOrder.Id.ToString(), OrderTotal = newOrder.Total });
         }
 

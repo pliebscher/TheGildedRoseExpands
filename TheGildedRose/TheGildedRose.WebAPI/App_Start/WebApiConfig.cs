@@ -11,7 +11,7 @@ namespace TheGildedRose.WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            //config.MessageHandlers.Add(new APIKeyAuthorizationHandler());
+            config.MessageHandlers.Add(new APIKeyAuthorizationHandler());
 
             // Web API routes
             config.MapHttpAttributeRoutes();

@@ -8,6 +8,8 @@ namespace TheGildedRose.WebAPI.Models
 {
     public class OrderRequest
     {
+        public string MerchantId { get; set; }
+
         public string ItemId { get; set; }
 
         public int Quantity { get; set; }

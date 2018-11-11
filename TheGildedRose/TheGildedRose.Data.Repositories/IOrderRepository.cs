@@ -10,7 +10,7 @@ namespace TheGildedRose.Data.Repositories
 {
     public interface IOrderRepository
     {
-        Order Create(Item item, int quantity);
+        Order Create(Guid merchantId, Item item, int quantity);
 
     }
 }
