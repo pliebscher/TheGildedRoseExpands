@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 
 using TheGildedRose.Data.Repositories;
+using TheGildedRose.Data.Models;
 
 namespace TheGildedRose.WebAPI.Controllers
 {
@@ -20,16 +21,10 @@ namespace TheGildedRose.WebAPI.Controllers
         }
 
         // GET: api/Inventory
-        public IEnumerable<string> Get()
+        public IEnumerable<Item> Get()
         {
-            return new string[] { "1", "2" };
+            return _inventoryRepository.GetInventory();
         }
 
-        // GET: api/Inventory/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-    }
+     }
 }

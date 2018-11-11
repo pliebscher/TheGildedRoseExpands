@@ -6,43 +6,37 @@ using System.Net.Http;
 using System.Web.Http;
 
 using TheGildedRose.Data.Repositories;
+using TheGildedRose.Data.Models;
+using TheGildedRose.WebAPI.Models;
 
 namespace TheGildedRose.WebAPI.Controllers
 {
     public class OrderController : ApiController
     {
         private IOrderRepository _orderRepository;
+        private IInventoryRepository _inventoryRepository;
 
-        public OrderController(OrderRepository orderRepository)
+        public OrderController(IOrderRepository orderRepository, IInventoryRepository inventoryRepository)
         {
             _orderRepository = orderRepository;
-        }
-
-        // GET: api/Order
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET: api/Order/5
-        public string Get(int id)
-        {
-            return "value";
+            _inventoryRepository = inventoryRepository;
         }
 
         // POST: api/Order
-        public void Post([FromBody]string value)
+        public HttpResponseMessage Post([FromBody]OrderRequest order)
         {
+            if (string.IsNullOrWhiteSpace(order.ItemId))
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+
+            Item item = _inventoryRepository.GetItem(Guid.Parse(order.ItemId));
+
+            if (item == null)
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+
+            Order newOrder = _orderRepository.Create(item, order.Quantity);
+
+            return Request.CreateResponse<OrderResponse>(HttpStatusCode.OK, new OrderResponse() { OrderId = newOrder.Id.ToString(), OrderTotal = newOrder.Total });
         }
 
-        // PUT: api/Order/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Order/5
-        public void Delete(int id)
-        {
-        }
     }
 }

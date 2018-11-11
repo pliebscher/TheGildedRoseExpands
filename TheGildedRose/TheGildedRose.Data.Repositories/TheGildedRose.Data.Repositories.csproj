@@ -46,5 +46,11 @@
     <Compile Include="OrderRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TheGildedRose.Data.Models\TheGildedRose.Data.Models.csproj">
+      <Project>{85205301-a758-4abc-9275-45784329cc7d}</Project>
+      <Name>TheGildedRose.Data.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
