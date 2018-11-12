@@ -1,7 +1,7 @@
 The Gilded Rose Expands - Take-Home Assignment (Server)
 
-[3a.] Choice of data format (+ samples)? Json; it's the lightest weight and platform agnostic. Samples below.
-[3b.] Choice of Authentication method and why? I used a custom handler (APIKeyAuthorizationHandler) for several reasons; 1. This is a B2B scenario. 2. An OAuth provider is well out of the scope of this excersize. 3. An API gateway should be used to handle Authentication and Authorization.
+[3a.] Choice of data format (+ samples)? Json; it's light weight and platform agnostic. Samples below.
+[3b.] Choice of Authentication method and why? I used a custom handler (APIKeyAuthorizationHandler) for several reasons; This is a B2B scenario so OAuth is likely not required. Additionally, an API gateway could be used to handle Authentication and Authorization.
 
 Request Headers:
 Content-Type	:	application/json

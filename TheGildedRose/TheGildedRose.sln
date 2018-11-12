@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGildedRose.WebAPI", "The
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGildedRose.WebAPI.Tests.Unit", "TheGildedRose.WebAPI.Tests.Unit\TheGildedRose.WebAPI.Tests.Unit.csproj", "{1EF73B30-7475-413B-AE05-5E44703E733A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGildedRose.WebAPI.Tests.Integration", "TheGildedRose.WebAPI.Tests.Integration\TheGildedRose.WebAPI.Tests.Integration.csproj", "{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BDD1D11-3369-492E-A802-E487943F69F3}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -34,10 +32,6 @@ Global
 		{1EF73B30-7475-413B-AE05-5E44703E733A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EF73B30-7475-413B-AE05-5E44703E733A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EF73B30-7475-413B-AE05-5E44703E733A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EA18CE2-564C-41B1-86C8-A1E7AB54C2E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BE1C273-ED75-4A5E-BF78-57B404D7F696}.Release|Any CPU.ActiveCfg = Release|Any CPU
