@@ -20,7 +20,7 @@ namespace TheGildedRose.WebAPI.Tests.Unit.Controllers
             controller.Request = new HttpRequestMessage();
             controller.Configuration = new HttpConfiguration();
 
-            OrderRequest request = new OrderRequest() { ItemId = "344DD455-691D-4BBB-89A6-A67588DB3172", Quantity = 2 };
+            OrderRequest request = new OrderRequest() { MerchantId = "A3D75E02-044B-4909-8E7C-4D6473B814BF", ItemId = "344DD455-691D-4BBB-89A6-A67588DB3172", Quantity = 2 };
 
             HttpResponseMessage response = controller.Post(request);
 

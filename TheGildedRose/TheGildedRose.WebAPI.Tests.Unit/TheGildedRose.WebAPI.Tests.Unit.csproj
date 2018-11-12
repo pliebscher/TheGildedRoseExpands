@@ -94,7 +94,7 @@
   <ItemGroup>
     <Compile Include="Controllers\OrderControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\InventoryControllerTest.cs" />
+    <Compile Include="Controllers\InventoryControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

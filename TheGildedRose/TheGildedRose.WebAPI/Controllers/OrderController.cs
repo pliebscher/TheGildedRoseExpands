@@ -26,7 +26,7 @@ namespace TheGildedRose.WebAPI.Controllers
         public HttpResponseMessage Post([FromBody]OrderRequest order)
         {
             // Do some validation...
-            if (order == null || string.IsNullOrWhiteSpace(order.ItemId))
+            if (order == null || string.IsNullOrWhiteSpace(order.MerchantId) || string.IsNullOrWhiteSpace(order.ItemId))
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
 
             // Fetch the item from Inventory...

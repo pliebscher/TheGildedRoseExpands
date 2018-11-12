@@ -9,7 +9,7 @@ using TheGildedRose.Data.Models;
 namespace TheGildedRose.WebAPI.Tests.Unit.Controllers
 {
     [TestClass]
-    public class InventoryControllerTest
+    public class InventoryControllerTests
     {
         [TestMethod]
         public void Get()
