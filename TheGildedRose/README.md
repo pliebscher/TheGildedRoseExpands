@@ -1,4 +1,4 @@
-The Gilded Rose Expands - Take-Home Assignment (Server)
+## The Gilded Rose Expands - Take-Home Assignment (Server)
 
 [3a.] Choice of data format (+ samples)? Json; it's light weight and platform agnostic. Samples below.
 [3b.] Choice of Authentication method and why? I used a custom handler (APIKeyAuthorizationHandler) for several reasons; This is a B2B scenario so OAuth is likely not required. Additionally, an API gateway could be used to handle Authentication and Authorization.
