@@ -47,3 +47,7 @@ http://localhost:50156/api/order (POST)
     "OrderTotal": 89.97
 }
 ```
+## Notes
+- Solution was created in Visual Studio 2017 w/ .Net Framework 4.6.1
+- I used a simple Repository pattern and Unity IoC to inject the repo's into the controllers.
+- Code was analyzed with NDepends and shows no critical, major or minor issues.
