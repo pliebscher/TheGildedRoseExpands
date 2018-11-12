@@ -6,7 +6,7 @@
 **Request Headers:**
 ```
 Content-Type	:	application/json
-APIKEY			:	52212679-87F3-484B-893B-C7329F74876A
+APIKEY		:	52212679-87F3-484B-893B-C7329F74876A
 ```
 **API Endpoint:**
 http://localhost:50156/api/inventory (GET)
