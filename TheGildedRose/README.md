@@ -1,13 +1,13 @@
 ## The Gilded Rose Expands - Take-Home Assignment (Server)
 
-[3a.] Choice of data format (+ samples)? Json; it's light weight and platform agnostic. Samples below.
-[3b.] Choice of Authentication method and why? I used a custom handler (APIKeyAuthorizationHandler) for several reasons; This is a B2B scenario so OAuth is likely not required. Additionally, an API gateway could be used to handle Authentication and Authorization.
+- [3a.] Choice of data format (+ samples)? Json; it's light weight and platform agnostic. Samples below.
+- [3b.] Choice of Authentication method and why? I used a custom handler (APIKeyAuthorizationHandler) for several reasons; This is a B2B scenario so OAuth is likely not required. Additionally, an API gateway could be used to handle Authentication and Authorization.
 
 **Request Headers:**
-
-Content-Type	:	application/json\n
+```
+Content-Type	:	application/json
 APIKEY			:	52212679-87F3-484B-893B-C7329F74876A
-
+```
 **API Endpoint:**
 http://localhost:50156/api/inventory (GET)
 
