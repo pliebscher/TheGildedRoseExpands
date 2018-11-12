@@ -12,7 +12,7 @@ namespace TheGildedRose.WebAPI.Tests.Unit.Controllers
     public class InventoryControllerTests
     {
         [TestMethod]
-        public void Get()
+        public void GetInventoryTest()
         {
             InventoryController controller = new InventoryController(new InventoryRepository());
             IEnumerable<Item> result = controller.Get();
