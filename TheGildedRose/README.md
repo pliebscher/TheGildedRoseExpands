@@ -35,9 +35,9 @@ http://localhost:50156/api/order (POST)
 **Sample Request:**
 ```
 {
-  "merchantId": "244dd455-691d-4cbb-11a6-a675822b3144",
-  "itemId": "344dd455-691d-4bbb-89a6-a67588db3173",
-  "quantity": 3
+  "MerchantId": "244dd455-691d-4cbb-11a6-a675822b3144",
+  "ItemId": "344dd455-691d-4bbb-89a6-a67588db3173",
+  "Quantity": 3
 }
 ```
 **Sample Response:**
